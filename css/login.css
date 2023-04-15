@@ -1,0 +1,431 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --color1: #FFB300;
+    --color2: black;
+    --color3: white;
+    --transition: all .4s ease-in-out;
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*###################################################### Start header ######################################################*/
+  .navbar-nav .nav-link {
+    color: var(--color2);
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: var(--color1);
+  }
+  
+  .dropdown-toggle::after {
+    display: none;
+  }
+  
+  .icon-us i {
+    padding-left: 4px;
+    font-size: 13px;
+    font-size: bold;
+  }
+  
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    width: 27vmin;
+  }
+  
+  .navbar .nav-item .dropdown-menu .dropdown-item {
+    font-size: 16px;
+    padding: 9px 25px;
+    font-weight: 600;
+    color: var(--color2);
+    position: relative;
+    overflow: hidden;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+    position: relative;
+  }
+  
+  .navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    background: 0 0;
+    color: var(--color1);
+    padding-left: 32px;
+  }
+  
+  .navbar .nav-item .dropdown-menu .dropdown-item::before {
+    content: "//";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 15px;
+    top: 9px;
+    color: var(--color1);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: -1;
+  }
+  
+  .navbar .nav-item .dropdown-menu .dropdown-item:hover::before {
+    opacity: 1;
+    visibility: visible
+  }
+  
+  /*###################################################### End header ######################################################*/
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+    background-color: var(--color3);
+    color: var(--color1);
+    cursor: pointer;
+    border: solid #111111;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+
+   /*###################################################### Start footer ######################################################*/
+   .footer {
+    background-color: #111111;
+    padding: 50px 0 0 0;
+    color: var(--color3);
+    margin-top: 20px;
+  }
+  
+  footer .grid-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .colum-1,
+  .colum-2,
+  .colum-3,
+  .colum-4 {
+    padding: 10px;
+  }
+  
+  footer .colum-1 img {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-contact li {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px
+  }
+  footer .colum-1  {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  footer .colum-1 ul {
+    padding: 0;
+  }
+  
+  .footer .colum-1 ul li a {
+    text-decoration: none;
+    color: var(--color3);
+  }
+  
+  .footer-contact li i {
+    width: 35px;
+    line-height: 35px;
+    margin-right: 15px;
+    border-radius: 50px;
+    background: var(--color1);
+    text-align: center;
+    color: var(--color3)
+  }
+  
+  /*###################################################### Link 1 + Link 2 */
+  footer .colum-2 h4,
+  footer .colum-3 h4,
+  footer .colum-4 h4 {
+    color: var(--color3);
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 21px;
+    font-weight: 600;
+    z-index: 1;
+  }
+  footer .colum-2 h4::before,
+  footer .colum-3 h4::before,
+  footer .colum-4 h4::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 2px;
+    background: rgba(255, 255, 255, .2);
+    bottom: 0;
+  }
+  
+  footer .colum-2 h4::after,
+  footer .colum-3 h4::after,
+  footer .colum-4 h4::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: var(--color1);
+    bottom: 0;
+    left: 1rem;
+  }
+  
+  footer .footer-link {
+    padding: 0
+  }
+  
+  footer .footer-link {
+    padding: 0
+  }
+  
+  footer .footer-link li {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+    transition: var(--transition);
+  }
+  
+  footer .footer-link li:hover {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 10px;
+    transition: var(--transition);
+  }
+  
+  footer .footer .colum-2 ul li a,
+  footer .footer .colum-3 ul li a {
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: 600;
+    transition: var(--transition);
+  }
+  
+  footer .footer .colum-2 ul li a:hover,
+  footer .footer .colum-3 ul li a:hover {
+    color: var(--color1);
+    transition: var(--transition);
+  }
+  
+  footer .footer-link li i {
+    width: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--color1)
+  }
+  
+  footer .colum-4 input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 16px;
+    outline: none;
+  }
+  
+  footer .colum-4 button {
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    outline: none;
+    font-weight: bold;
+    border: none;
+    background-color: var(--color1);
+    color: var(--color2);
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  
+  footer .colum-4 button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: var(--color3);
+    transform-origin: center;
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  footer .colum-4 button:hover {
+    cursor: pointer;
+    color: var(--color1);
+    transition: var(--transition);
+  }
+  
+  footer .colum-4 button:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+  }
+  
+  .Copyright{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Copyright .cop{
+    margin: auto;
+  }
+  .Copyright .cop span{
+    color: var(--color1);
+    font-weight: bold;
+  }
+  .Copyright .social {
+    background-color: var(--color1);
+    width: 48%;
+    height: 100px;
+    position: relative;
+  }
+  .Copyright .social::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 75px;
+    background-color: var(--color1);
+    transform: skewX(-30deg);
+    left: -29px;
+  }
+  .Copyright .social ul {
+    padding: 0;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .Copyright .social li {
+    list-style-type: none;
+    display: inline;
+    padding: 5px;
+  }
+  .Copyright li a{
+    text-decoration: none;
+  }
+  .Copyright li a i{
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    background: var(--color2);
+    color: var(--color1);
+    transition: var(--transition);
+  }
+  .Copyright li a i:hover{
+    background-color: var(--color3);
+  }
+  
+  /*###################################################### Start footer ######################################################*/
+  @media (max-width: 320px) {
+    footer {
+      width: fit-content;
+      overflow: hidden;
+
+    }
+  }
+  
+  /* extra Small */
+  @media (max-width: 425px) {
+    .container {
+      overflow: hidden;
+
+      width: 320px;
+    }
+  }
+  
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      overflow: hidden;
+
+      width: 750px;
+    }
+  }
+  
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      
+      width: 970px;
+    }
+  }
+  
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
